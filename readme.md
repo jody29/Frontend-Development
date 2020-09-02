@@ -60,7 +60,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** surface plane (wil beide proberen, maar ga eerst hier mee beginnen)
 
-**Je opdracht:** https://www.ajax.nl/
+**Je opdracht:** https://jody29.github.io/Frontend-Development/
 
 **Screenshot(s):
 
