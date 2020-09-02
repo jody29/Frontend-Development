@@ -62,10 +62,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je opdracht:** https://jody29.github.io/Frontend-Development/
 
-**Screenshot(s):
+**Screenshot(s):**
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/website_screenshot.png)
 
-**Breakdown-schets(en):
+**Breakdown-schets(en):**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown_schets.png)
