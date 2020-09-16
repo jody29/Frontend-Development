@@ -50,7 +50,7 @@ Het ging eigenlijk gelijk goed om de javascript te implementeren. Ik heb er name
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+We hadden nog niet echt een idee hoe we dit moesten invullen, maar we hadden wel een volgorde aangemaakt wie als eerste zijn werk zou laten zien. Ik zou als laatste gaan. Ik wil vooral feedback op mijn navbar. Ook wil ik weten hoe ik ervoor kan zorgen dat wanneer de sponsoren op de navbar verdwijnen, dat die dan met een transition weg vervagen.
 
 ### Verslag van meeting
 
