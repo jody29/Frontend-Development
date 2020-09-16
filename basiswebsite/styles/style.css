@@ -1,0 +1,410 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;
+
+
+}
+
+body {
+    margin: 0;
+}
+
+/*Alles voor de header*/
+header {
+    background-image: url(../images/final_background_Tekengebied%201.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 9em;
+    
+    width: 100%;
+    padding: .875em 1.5em 1.5em;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: 300ms;
+}
+
+/*Header hoogte na scroll*/
+.scroll {
+    height: 6.5em;
+}
+
+/*Header na openen menu*/
+.fullpage {
+    height: 100%;
+}
+
+main {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*bovenste rij in de nav*/
+header nav ul:first-of-type {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    justify-content:flex-start;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+    transition: 300ms;
+    align-items: center;
+}
+
+/*Eerste ul na scroll*/
+.ulScroll {
+    margin-bottom: .5em;
+    transition: 300ms;
+}
+
+/*list items in de nav*/
+nav ul li {
+    margin: 0;
+    padding: 0;
+    flex-basis: 10%;
+    position: relative;
+}
+
+/*Logo en letterlogo container*/
+nav ul:first-of-type li:first-of-type a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+/*Letter logo*/
+nav ul:first-of-type li:first-of-type img:last-of-type {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    height: 1.5em;
+    margin: 0;
+    padding-right: .5em;
+    border-right: 1px solid white;
+    transition: 1s;
+}
+
+.letterScroll {
+    border-right: 0px;
+    transition: 300ms;
+    
+}
+
+/*Ajax logo*/
+nav ul:first-of-type li:first-of-type img:first-of-type {
+    position: relative;
+    height: 4em;
+    margin-right: .5em;
+    transition: opacity 0.3s, height 0.3s;
+    transform: translateY(-.4375rem);
+    transition: 2s;
+}
+
+.ajaxScroll {
+    display: none;
+}
+
+li a + a {
+    padding: .5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a {
+    font-family: 'Archivo Black', sans-serif;
+    
+}
+
+/*Tweede ul in nav*/
+header nav ul:last-of-type {
+    display: flex;
+    list-style: none;
+    flex-basis: 10%;
+    margin: 0;
+    padding: .5em 0;
+    justify-content: flex-start;
+}
+
+header nav ul:last-of-type li {
+    flex-basis: 10%;
+}
+
+
+nav ul:first-of-type li:nth-of-type(2) {
+    display: none;
+}
+
+nav ul:first-of-type li:nth-of-type(3) img {
+    position: relative;
+    height: 1em;
+    margin: 0 .75em;
+}
+
+/*Ziggo logo na scroll*/
+.ziggoScroll {
+    display: none;
+}
+
+nav ul:first-of-type li:nth-of-type(4) img {
+    position: relative;
+    height: 1.5em;
+}
+
+/*Adidas logo na scroll*/
+.adidasScroll {
+    display: none;
+}
+
+nav ul:first-of-type li:nth-of-type(5) img {
+    height: 1.5em;
+}
+
+nav ul:first-of-type li:nth-of-type(5) {
+    margin-left: auto;
+}
+
+/*Tickets & Fanshop*/
+nav ul:nth-of-type(2) li a {
+    font-size: 16px;
+    padding: 4px 12px;
+    border: 1px solid white;
+    border-radius: 5em;
+    margin-right: .5em;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+nav ul:last-of-type li:first-of-type {
+    display: none;
+}
+
+nav ul:last-of-type li:nth-of-type(2) {
+    display: none;
+}
+
+nav ul:last-of-type li:nth-of-type(3) {
+    display: none;
+}
+
+nav ul:last-of-type li:nth-of-type(6) {
+    display: none;
+}
+
+/*Hamburger Menu*/
+nav ul:last-of-type li:nth-of-type(7) {
+    line-height: .7em;
+    border: 0;
+    font-size: 1.5em;
+    margin-left: 3.7em;
+    color: white;
+
+}
+
+
+
+main section:first-of-type ul {
+    list-style: none;
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    margin: 9.5em 0 0;
+    max-width: 90em;
+    padding: 2em 1.5em 0;
+    transition: 300ms;
+    
+}
+
+/*Main na scroll*/
+.mainScroll {
+    margin: 6em 0 0;   
+}
+
+main section:first-of-type li:first-of-type img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section:first-of-type li:first-of-type {
+    position: relative;
+    overflow: hidden;
+    height: 24.5em;
+    
+}
+
+main section:first-of-type li div {
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    padding: 100%;
+}
+
+section:first-of-type li h2 {
+    position: absolute;
+    font-family: 'Archivo Black', sans-serif; 
+    color: white;
+    margin: 1em 6em 0 1em;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+main img {
+    max-width: 100%;
+}
+
+section:first-of-type li h4 {
+    background-color: white;
+    color: black;
+    padding: .5em 1em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    margin: 2em; 
+}
+
+section:first-of-type li:nth-of-type(2) {
+    position: relative;
+}
+
+section:first-of-type li:nth-of-type(2) img {
+    height: 13.5em;
+    width: 100%;
+}
+
+section:first-of-type li:nth-of-type(2) h2,h3,h4 {
+    position: absolute;
+}
+
+section:first-of-type li:nth-of-type(2) h2 {
+    margin: 1em 9.5em 0 1.2em;
+    top: 0;
+    
+}
+
+section:first-of-type li:nth-of-type(2) h3 {
+    position: absolute;
+    top: 3.6em;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    margin: 1.7em
+}
+
+section:first-of-type li:nth-of-type(2) {
+    width: 100%;
+}
+
+section:first-of-type li:last-of-type {
+    display: none;
+}
+
+
+
+section:nth-of-type(2) ul:first-of-type {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 1.5em 0 1.5em;
+    padding: 0;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+section:nth-of-type(2) ul:first-of-type li {
+    margin-left: 1.7em;
+    font-size: 1em;
+}
+
+section:nth-of-type(2) ul:first-of-type li a {
+    padding-bottom: .5em;
+}
+
+section:nth-of-type(2) ul:first-of-type li:nth-child(1) {
+    margin-left: 0;
+    
+}
+
+section:nth-of-type(2) ul:first-of-type li a {
+    color: black;
+}
+
+section:nth-of-type(2) {
+    width: 100%;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) {
+    width: 100%;
+    padding: 2em 1.5em 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 3em;
+    border-bottom: 1px solid crimson;
+    margin-bottom: 1.5em;
+}
+
+
+
+section:nth-of-type(2) ul:nth-of-type(2) h2 {
+    color: black;
+    font-size: 1.6em;
+    margin-bottom: .5em;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) li + li h2 {
+    margin-bottom: 1.75em;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) p {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.15em;
+    margin-top: .5em; 
+    line-height: 1.5em;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) h3 {
+    color: white;
+    background-color: rgba(64, 62, 62, 1);
+    font-family: 'Archivo', sans-serif;
+    font-size: .8em;
+    font-weight: lighter;
+    margin: 0;
+    padding: .5em;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) img:last-of-type {
+    height: 2.5em;
+    
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: .8em;
+    
+    
+}
+
+
+
+
+
+
+
