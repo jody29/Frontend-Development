@@ -30,7 +30,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Bij mij ging het eigenlijk wel goed en zonder problemen. Ik heb mijn eerste pagina weten af te maken en ook al bijna responsive. Ik hoef nu nog maar een pagina te maken en dan ben ik klaar.
+
+**Screenshot(s):**
+
+![screenshot(s) van mijn huidige pagina](/images/Voortgang2_1.png)
+
+![screenshot(s) van mijn huidige pagina](images/Voortgang2_2.png)
+
+![screenshot(s) van mijn huidige pagina](images/Voortgang2_3.png)
+
+![screenshot(s) van mijn huidige pagina](images/Voortgang2_4.png)
+
+### Agenda voor meeting
+
+Ik heb zelf niet echt bepaalde onderwerpen waar ik meer uitleg over wil hebben, maar een paar mensen uit mijn groepje wilde het hebben over positioneren van elementen en bewerken van forms. Ook wilde sommige weten waar ze op hun site beter grid kunnen gebruiken in plaats van flexbox.
 
 
 
@@ -54,7 +70,7 @@ We hadden nog niet echt een idee hoe we dit moesten invullen, maar we hadden wel
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Tijdens de meeting is er mij goed uitgelegd hoe ik de sponsoren in de navbar met een transitie kon laten verdwijnen. Dit moest doormiddel van een animation. Na de meeting kon ik hier dus mee verder.
 
 
 
