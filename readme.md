@@ -24,7 +24,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik zat deze week een beetje te klooien met mijn footer responsive te maken. Dit wilde namelijk niet helemaal. Uiteindelijk heb ik het wel zelf weten op te lossen. Verders ben ik begonnen aan de tweede pagina. Hier zou ik niet al te lang over moeten doen. De eerste pagina is al zo goed als responsive, alleen de header moet nog gebeuren. De tweede pagina moet nog responsive gemaakt worden. Waarschijnlijk word dit niet een al te groot probleem.
+
+**Screenshot(s):**
+
+![screenhot(s) van mijn huidige pagina](/images/Voortgang3_1.png)
+
+![screenhot(s) van mijn huidige pagina](/images/Voortgang3_2.png)
+
+![screenhot(s) van mijn huidige pagina](/images/Voortgang3_3.png)
+
+### Agenda voor meeting
+
+Benthe wilde iets vragen over haar hamburger menu en over media queries. Van andere hebben we helaas niks gehoord waar ze het in de meeting over willen hebben. Ik heb zelf aangegeven dat ik zelf geen uitleg nodig heb over een bepaald onderwerp.
+
 
 
 
