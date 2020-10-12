@@ -15,7 +15,6 @@ body {
 
 /*Alles voor de header*/
 header {
-/*    background-image: url(../images/final_background_Tekengebied%201.png);*/
     background-image: url(../images/visuals-patterns-red.png);
     background-repeat: no-repeat;
     background-size: 305vw auto;
@@ -28,6 +27,164 @@ header {
     top: 0;
     z-index: 5;
     transition: 500ms;
+}
+
+.uitklapNav img.searchIcon{
+    width: 6%;
+    position: fixed;
+    right: 0;
+    margin-right: 2em
+}
+
+.uitklapNav h5 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+    background-color: white;
+    padding: .5em;
+    color: rgb(100,100,100);
+    font-family: sans-serif;
+}
+
+.uitklapNav h5::before {
+    content:"";
+    background-image: url(../images/internet.png);
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-size: 1em 1em;
+    margin-right: .4em;
+    margin-bottom: -.1em;
+}
+
+.uitklapNav h5::after {
+    content:"";
+    background-image: url(../images/dropdownIcon.png);
+    width: .5em;
+    height: .5em;
+    display: inline-block;
+    background-size: .5em .5em;
+    margin-left: .4em;
+    margin-right: .3em;
+    margin-bottom: 0;
+}
+
+.uitklapNav {
+    position: relative;
+    height: 0%;
+    overflow: scroll;
+    width: 115%;
+    padding: 1em 1.5em;
+    border-top: 1px solid white;
+    margin: 1.5em -1.5em;
+    justify-content: flex-start;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transition: 1s;
+}
+
+.uitklapOpen {
+    display: flex;
+    height: 90%;
+    transition: 1s;
+}
+
+
+
+.uitklapNav ul:first-of-type {
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.uitklapNav section {
+    display: flex;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+.uitklapNav section img {
+    width: 7%;
+    margin-right: 1.4em;
+}
+
+.uitklapNav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    list-style: none;
+    height: fit-content;   
+}
+
+.uitklapNav ul:last-of-type li:first-of-type {
+    display: block;
+}
+
+.uitklapNav ul:first-of-type li:nth-of-type(2) {
+    display: block;
+}
+
+.uitklapNav ul:first-of-type li:nth-of-type(5) {
+    margin-left: 0;
+}
+
+.uitklapNav ul:nth-of-type(2) li a {
+    padding: 0;
+    border: none;
+}
+
+.uitklapNav ul:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.uitklapNav ul:last-of-type li:nth-of-type(2) {
+    display: block;
+}
+
+.uitklapNav ul:last-of-type li:nth-of-type(3) {
+    display: block;
+}
+
+.uitklapNav ul:last-of-type li:nth-of-type(6) {
+    display: block;
+}
+
+.uitklapNav ul:last-of-type li:nth-of-type(7) {
+    display: block;
+    font-size: 1em;
+}
+
+.uitklapNav ul li:first-of-type {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: .3em
+    
+}
+
+
+
+.uitklapNav ul li a {
+    padding: 0;
+    border: none;
+    font-weight: 300;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.35
+}
+
+.uitklapNav ul li:nth-of-type(5) {
+    margin-left: 0;
+}
+
+.uitklapNav ul:last-of-type li:nth-of-type(7) {
+    margin-left: 0;
 }
 
 /*Header hoogte na scroll*/
@@ -164,6 +321,10 @@ header nav ul:last-of-type {
     align-items: center;
 }
 
+header ul:last-of-type li:last-of-type {
+    display: none;
+}
+
 header nav ul:last-of-type li {
     flex-basis: 10%;
 }
@@ -208,7 +369,6 @@ nav ul:nth-of-type(2) li a {
     border-radius: 5em;
     margin-right: .5em;
     align-items: center;
-    -webkit-font-smoothing: antialiased;
 
 }
 
@@ -751,12 +911,14 @@ footer .right_row section:nth-of-type(3) ul li:last-of-type {
     margin-bottom: 0;
 }
 
+/*Copyright tekst*/
 footer p:last-child {
     font-size: .65em;
     margin-bottom: 3em;
     
 }
 
+/*Eerste list item die bold moet zijn */
 footer li:first-child {
     color: black;
     font-weight: bold;
@@ -766,23 +928,37 @@ footer li:first-child {
 /*Vormgeving voor pagina 2*/
 
 
+main.article_page {
+    width: 100%;
+    margin-left: 0;
+}
 
-article h1 {
+/*Volledige article*/
+.article_page article {
+    border-bottom: 2px solid crimson;
+    padding-bottom: .5em;
+    margin: 1.5em;
+}
+
+/*Header van de pagina*/
+.article_page h1 {
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: white;
     margin-bottom: 0;
-    padding: 3.5em 1em .7em .8em;
+    padding: 4em 0em .7em .8em;
     text-align: start;
+    font-family: 'Archivo Black', sans-serif;
     background-image: url(../images/visuals-patterns-red.png);
     background-repeat: no-repeat;
     background-size: 305vw auto;
     background-color: #c2002f;
-    background-position: 50% 9%;
+    background-position: 50% 6%;
 }
 
-article img {
+/*image bovenaan de pagina*/
+.article_page img {
     margin: 0;
     width: 100%;
     height: 16em;
@@ -790,30 +966,436 @@ article img {
     object-position: top;
 }
 
-
-article p {
-    
+/*Eerste alinea op de pagina*/
+.article_page article p {
     font-family: 'Archivo', sans-serif;
     font-weight: lighter;
     font-size: 1.14em;
     font-weight: 300;
     line-height: 1.33;
-    margin-bottom: 1.75em;
-    padding: 1.5em;
     margin-top: 0;
+    
 }
 
+/*Blockquotes op de pagina*/
+.article_page blockquote {
+    margin: 0;
+    padding: 0 0 1em;
+    font-size: 1.14em;
+    font-family: 'Archivo', sans-serif;
+    color: rgb(50,50,50);
+}
 
+/*Padding voor de onderkant van de laatste blockquote*/
+.article_page blockquote:last-of-type {
+    padding-bottom: 1em;
+}
+
+/*Lijst met datum auteur en fotograaf*/
+.article_page article ul {
+    list-style: none;
+    padding: 0 0 1em;
+    margin: 0;
+    font-size: 1.14em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: lighter;
+}
+
+/*Section voor de hashtag en de deelknop*/
+article section {
+    display: flex;
+    flex-direction: row;
+}
+
+/*hashtag*/
+article section h3 {
+    margin: 0;
+    padding: .5em;
+    font-size: .8em;
+    background-color: rgba(70,70,70,5);
+    color: white;
+    position: none;
+    font-family: 'Archivo', sans-serif;
+}
+
+/*deelknop*/
+.article_page article section img {
+    max-height: 2em;
+    width: 1.5em;
+    padding-bottom: .5em;
+    margin-left: auto;
+    object-fit: contain;
+    position: inherit;
+}
+
+/*Feedback gedeelte*/
+aside {
+    padding: .1em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.1em;  
+}
+
+aside button {
+    text-align: start;
+    border: none;
+    background: none;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+aside button:last-of-type {
+    margin-bottom: .5em;
+}
+
+aside button:first-of-type::before {
+    background-image: url(../images/vinkje_1.png);
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.5em 1.5em;
+    content: "";
+    margin-right: 1em;
+    margin-bottom: -.3em    
+}
+
+aside button:last-of-type::before {
+    background-image: url(../images/kruisje.png);
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.5em 1.5em;
+    content: "";
+    margin-right: 1em;
+    margin-bottom: -.3em    
+}
+
+aside button:focus {
+    outline: none;
+}
+
+aside p {
+    font-family: 'Archivo', sans-serif;
+    color: dimgray;
+    font-size: .8em
+}
+
+.article_page h2:nth-last-child(2) {
+    font-family: 'Archivo Black';
+    padding-left: 1em;
+    margin: 2em 0 -.5em;   
+}
+
+.article_page section:nth-of-type(1) {
+    display: flex;
+}
+
+.article_page section:nth-of-type(1) article:first-of-type {
+    margin-bottom: 4em;
+}
+
+.article_page section:nth-of-type(1) article h2 {
+    font-family: 'Archivo Black';  
+}
+
+.article_page section:nth-of-type(1) article + article {
+    display: none;
+}
+
+    .article_page article:first-of-type div section h3 {
+        display: none;
+    }
+    
+    .article_page article:first-of-type div section img {
+        display: none;
+    }
 
 @media screen and (min-width: 1100px) {
+    
+    
+    .ziggoScroll {
+        display: block;
+    }
+    
+    .adidasScroll {
+        display: block;
+    }
+    
+    .article_page article p {
+        padding: 0 15.5em 0 0;
+        font-size: 1.5em;
+    } 
+    
+    .article_page article blockquote {
+        padding: 0 20em 0 0;
+        margin-bottom: 1em;
+    }
+    
+    .article_page article:first-of-type div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom: 2px solid crimson;
+        padding-right: 9em;
+        margin: 0;
+        padding-top: 0;
+    }
+    
+    .article_page article:first-of-type div section h3 {
+        position: relative;
+        display: block;
+        background-color: rgb(50,50,50);
+        margin-bottom: 1em;
+        color: white;
+        padding:.5em;
+        height: fit-content;
+        font-family: 'Archivo', sans-serif;
+        font-size: .7em;
+        width: fit-content;
+    }
+    
+    .article_page article:first-of-type div section img {
+        position: absolute;
+        display: block;
+        bottom: .3em;
+        right: 0;
+    }
+    
+    .article_page article{
+        margin: 2em 6.5em;
+        position: relative;
+        
+    }
+    
+    .article_page aside {
+        margin: 2em 6.5em;
+        padding: 0;
+        width: 25em;
+    }
+    
+    .article_page h1 {
+        background-size: 100vw 100vh;
+        background-position: center 24%;
+        font-size: 3em;
+        padding: 2em 1em .5em 2em;
+    }
+    
+    .article_page img {
+        height: 28em;
+    }
+    
+    
+    .article_page section.related article img:first-child {
+        height: 15em
+        
+    }
+    
+    .article_page section:nth-of-type(1) article p {
+        padding: 0 0em 0 0;
+        font-size: 1.13em;
+        margin-top: auto;
+    }
+    
+   
+    
+    .article_page .related {
+        padding: 0 5.5em;
+    }
+    
+    .related article {
+        width: 233em;
+        margin: 3em 1em;
+        height: 31em
+    }
+    
+    .article_page h2:nth-last-child(2) {
+        font-size: 2em;
+        padding-left: 3.2em
+        
+    }
+    
+    .related article img:first-of-type{
+        height: 20em;
+    }
+    
+    .related h2 {
+        font-size: 1.5em;
+    }
+    
+    .related article:first-of-type h2 {
+        margin-bottom: 3em
+        
+    }
+    
+    
+    .article_page section:nth-of-type(1) article + article {
+        display: block;
+}
     
     header {
         height: 7.5em;
         background-size: 100vw 100vh;
         background-position: center 15%;
-        padding: 1.5em 2em;
+        padding: 1.5em 0 1.5em 1.5em ;
         align-items: center;
         
+    }
+    
+    header nav {
+        padding-left: .8em;
+        padding-top: 1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    header ul:last-of-type li:nth-of-type(4) a {
+        border: 1px solid white;
+    }
+    
+    header ul:last-of-type li:nth-of-type(4) a:hover {
+        background-color: white;
+        color: black;  
+    }
+    
+/*Eerste list item met hover*/
+    header ul:last-of-type li:first-of-type {
+        position: relative; 
+    }
+    
+    header ul:last-of-type li:first-of-type::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        left: .5em;
+        right: .8em;
+        height: .05em;
+        bottom: -.30em;
+        transform: scaleX(0);
+        transition: 300ms ease;   
+    }
+    
+    header ul:last-of-type li:first-of-type:hover::after {
+        transform: scaleX(1);
+        
+    }
+    
+/*Tweede list item met hover*/
+    header ul:last-of-type li:nth-of-type(2) {
+        position: relative; 
+    }
+    
+    header ul:last-of-type li:nth-of-type(2)::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        left: .5em;
+        right: .8em;
+        height: .05em;
+        bottom: -.30em;
+        transform: scaleX(0);
+        transition: 300ms ease;   
+    }
+    
+    header ul:last-of-type li:nth-of-type(2):hover::after {
+        transform: scaleX(1);
+        
+    }
+    
+/*Derde list item met hover*/
+    header ul:last-of-type li:nth-of-type(3) {
+        position: relative; 
+    }
+    
+    header ul:last-of-type li:nth-of-type(3)::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        left: .5em;
+        right: .8em;
+        height: .05em;
+        bottom: -.30em;
+        transform: scaleX(0);
+        transition: 300ms ease;   
+    }
+    
+    header ul:last-of-type li:nth-of-type(3):hover::after {
+        transform: scaleX(1);
+        
+    }    
+    
+   
+    
+    header ul:last-of-type li:nth-of-type(5) a {
+        border: 1px solid white;
+    }
+    
+    header ul:last-of-type li:nth-of-type(5) a:hover {
+        background-color: white;
+        color: black;  
+    }
+    
+    header ul:last-of-type li:nth-of-type(6) a {
+        margin-left: 1em;
+    
+    }
+    
+    header ul:last-of-type li:nth-of-type(6) {
+        margin-top: -1em;
+        margin-left: .5em;
+    }
+    
+    
+    header ul:last-of-type li:nth-of-type(6)::before {
+        background-image: url(../images/account.png);
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        display: inline-block;
+        background-size: 1.5em 1.5em;
+        margin-bottom: -1.5em;
+
+    }
+    
+    header nav ul:first-of-type {
+        align-items: center;
+    }
+    
+    header nav ul:first-of-type li:nth-of-type(2) {
+        display: block;
+        padding-right: 1em;
+        border-right: 1px solid white;
+        height: 1.5em;
+        align-items: center;
+        
+    }
+    
+    
+    
+    header nav ul:first-of-type li:nth-of-type(2) img {
+        width: 22em;
+        height: auto;
+        margin-top: -2em
+        
+    }
+    
+    header nav ul:first-of-type li img {
+        width: 3em;
+    }
+    
+    header nav ul:first-of-type li + li {
+        flex-basis: 6.5%;
+        
+    }
+    
+    header nav ul:first-of-type li:nth-of-type(1) {
+        display: none;
     }
     
     a {
@@ -827,6 +1409,28 @@ article p {
     header ul:last-of-type li {
         display: block;
     
+    }
+    
+    header ul:last-of-type li a {
+        border: none;
+        font-family: 'Archivo', sans-serif;
+        font-weight: bold;
+    }
+    
+    header ul:last-of-type li:nth-of-type(7) {
+        display: none;
+    }
+    
+    header ul:last-of-type li:last-of-type {
+        display: block;
+        margin-top: .3em;
+    }
+    
+    header ul:last-of-type li:last-of-type img {
+        width: 2.5em;
+        padding-left: 1em;
+        border-left: 1px solid white;
+        margin-left: 0;
     }
     
     footer {
@@ -868,10 +1472,6 @@ nav ul:last-of-type li:nth-of-type(6) {
     
     .ajaxScroll {
     animation: none;
-    }
-    
-    header nav ul:last-of-type {
-        display: none;
     }
     
     .ulScroll {
