@@ -6,19 +6,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.ajax.nl/
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+In het begin ging het eigenlijk heel erg goed voor mij. Ik had eigenlijk geen moeite met de mobiele website maken. Voor mij begon de moeite pas toen ik het responsive naar desktop moest maken. Ook zat ik op het einde een beetje te kloten met het uitklapmenu. Deze kwam namelijk niet zo lekker op zijn plek. Na een hoop trial and error is het mij uiteindelijk gelukt. De tweede pagina ging voor mij het makkelijkst. Ik heb ook gemerkt dat ik daar elementen in heb gebruikt die het mij veel makkelijker maken. Als ik hier eerder aan had gedacht, dan had ik dit uiteraard voor mijn eerste pagina ook gedaan. Voor de volgende keer ga ik dus ook meer erop letten dat ik mijn code iets netter hou dan dat het nu is geworden.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![screenshot(s) van mijn huidige pagina](/images/Eind1.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind2.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind3.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind4.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind5.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind6.png)
+
+![screenshot(s) van mijn huidige pagina](/images/Eind7.png)
+
 
 
 

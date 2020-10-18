@@ -5,10 +5,9 @@
 
 }
 
-h5 {
-    -webkit-font-smoothing: antialiased;
-}
 
+
+/*margin voor de body*/
 body {
     margin: 0;
 }
@@ -29,6 +28,7 @@ header {
     transition: 500ms;
 }
 
+/*Zoekbutton die in de uitklap navigatie zit*/
 .uitklapNav img.searchIcon{
     width: 6%;
     position: fixed;
@@ -36,6 +36,7 @@ header {
     margin-right: 2em
 }
 
+/*Taalvenster uitklapnav*/
 .uitklapNav h5 {
     position: fixed;
     bottom: 0;
@@ -47,6 +48,7 @@ header {
     font-family: sans-serif;
 }
 
+/*internet logo in taalvenster*/
 .uitklapNav h5::before {
     content:"";
     background-image: url(../images/internet.png);
@@ -58,6 +60,7 @@ header {
     margin-bottom: -.1em;
 }
 
+/*Uitklap voor taalkeuze*/
 .uitklapNav h5::after {
     content:"";
     background-image: url(../images/dropdownIcon.png);
@@ -70,6 +73,7 @@ header {
     margin-bottom: 0;
 }
 
+/*Container van de uitklap navigatie*/
 .uitklapNav {
     position: relative;
     height: 0%;
@@ -85,6 +89,7 @@ header {
     transition: 1s;
 }
 
+/*Uitklap navigatie als ie open is*/
 .uitklapOpen {
     display: flex;
     height: 90%;
@@ -92,24 +97,27 @@ header {
 }
 
 
-
+/*Eerste lijst in de uitklap navigatie*/
 .uitklapNav ul:first-of-type {
     margin-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
 }
 
+/*Social Media logos*/
 .uitklapNav section {
     display: flex;
     margin-top: 3em;
     padding-bottom: 3em;
 }
 
+/*images van social logo's*/
 .uitklapNav section img {
     width: 7%;
     margin-right: 1.4em;
 }
 
+/*lijstjes in de uitklapmenu*/
 .uitklapNav ul {
     display: flex;
     flex-direction: column;
@@ -119,46 +127,56 @@ header {
     height: fit-content;   
 }
 
+/*Zichtbaar maken van social logo*/
 .uitklapNav ul:last-of-type li:first-of-type {
     display: block;
 }
 
+/*Zichtbaar maken van list item 2 in eerste UL*/
 .uitklapNav ul:first-of-type li:nth-of-type(2) {
     display: block;
 }
 
+/*Deze overerfde een te grote linker margin van een andere list item*/
 .uitklapNav ul:first-of-type li:nth-of-type(5) {
     margin-left: 0;
 }
 
+/*border overerft van de navigatie*/
 .uitklapNav ul:nth-of-type(2) li a {
     padding: 0;
     border: none;
 }
 
+/*derde ul had een row ipv column overerfd*/
 .uitklapNav ul:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+/*Zichtbaar maken*/
 .uitklapNav ul:last-of-type li:nth-of-type(2) {
     display: block;
 }
 
+/*Zichtbaar maken*/
 .uitklapNav ul:last-of-type li:nth-of-type(3) {
     display: block;
 }
 
+/*Zichtbaar maken*/
 .uitklapNav ul:last-of-type li:nth-of-type(6) {
     display: block;
 }
 
+/*Zichtbaar maken en font-size verkleinen*/
 .uitklapNav ul:last-of-type li:nth-of-type(7) {
     display: block;
     font-size: 1em;
 }
 
+/*Alle eerste list items bold maken*/
 .uitklapNav ul li:first-of-type {
     color: white;
     font-family: sans-serif;
@@ -168,7 +186,7 @@ header {
 }
 
 
-
+/*links in de list*/
 .uitklapNav ul li a {
     padding: 0;
     border: none;
@@ -179,10 +197,12 @@ header {
     line-height: 1.35
 }
 
+/*Linker margin op alle 5e list items in de uitklap nav*/
 .uitklapNav ul li:nth-of-type(5) {
     margin-left: 0;
 }
 
+/*linker margin voor "Wedstrijdbezoek"*/
 .uitklapNav ul:last-of-type li:nth-of-type(7) {
     margin-left: 0;
 }
@@ -1116,6 +1136,17 @@ aside p {
         display: none;
     }
 
+.fixed {
+        
+        display: none;
+        
+        
+    }
+    
+    .crosses {
+        display: none;
+    }
+
 @media screen and (min-width: 1100px) {
     
     
@@ -1482,13 +1513,46 @@ nav ul:last-of-type li:nth-of-type(6) {
         height: auto;
     }
     
+    main section:first-of-type ul li h2:hover {
+        opacity: 1;
+    }
+    
     main section:first-of-type ul:first-of-type li:first-of-type {
         height: 30em
     }
     
     
     .main_hover:hover {
-        color: lightgray;
+        color: rgba(0,0,0,.7);
+    }
+    
+    .second_hover:hover {
+        color: rgba(255,255,255,0.7);
+    }
+    
+    main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(n+13) h2:hover {
+        opacity: 1;
+        
+        
+    }
+    
+    .fixed {
+        position: fixed;
+        width: 3em;
+        top: 8.5em;
+        right: 9em;
+        z-index: 100;
+        display: block;
+        
+        
+    }
+    
+    .crosses {
+        position: fixed;
+        z-index: 100;
+        right: 3em;
+        bottom: 1.5em;
+        display: block;
     }
    
     
